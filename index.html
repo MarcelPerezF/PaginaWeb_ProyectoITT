@@ -31,7 +31,13 @@
 					<a href="" class="active">INICIO</a>
 				</li>
 				<li>
-					<a href="Paginas/Informacion.html">INFORMACION</a>
+					<a href="Mapa/">MAPA</a>
+				</li>
+				<li>
+					<a href="Estadistica/">ESTADISTICA</a>
+				</li>
+				<li>
+					<a href="Informacion/">INFORMACION</a>
 				</li>
 			</ul>
 		</nav>
@@ -45,9 +51,42 @@
 
 	<div id="main">
 		<div id="map">
-			<p style="text-align: center; font-family: sans-serif; font-weight: bold; padding-top: 10px; font-size: 20px;">Mapa de calidad del aire en el campus</p>
-			<img src="Imagenes/Mapa.jpg" id="mapa_calidad">
-			<p id="FechaActualizacionMapa" style="text-align: center; font-family: sans-serif; font-size: 15px; font-style: italic; padding-bottom: 5px;">Actualizado a: 28/12/2022 - 08:00:00</p>
+			<div class="slider">
+				
+				<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1" checked>
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+
+					<div class="slide first">
+						<img src="Imagenes/Banner1.png">
+					</div>
+					<div class="slide">
+						<a href="Estadistica/"><img src="Imagenes/Banner2.png"></a>
+					</div>
+					<div class="slide">
+						<a href="Mapa/"><img src="Imagenes/Banner3.png"></a>
+					</div>
+					<div class="slide">
+						<a href="Informacion/"><img src="Imagenes/Banner4.png"></a>
+					</div>
+
+					<div class="navigation-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+					</div>
+				</div>
+				<div class="navigation-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+
+			</div>
 		</div>
 
 		<article>
@@ -123,6 +162,26 @@
 	</footer>
 
 </div>
+	<!--Script Slideshow  -->
+	<script type="text/javascript">
+		var counter=2;
+		setInterval(function(){
+			var nextRadio;
+			var rad1, rad2, rad3, rad4;
+			if(rad1 = document.querySelector('input[id=radio1]:checked')){
+				nextRadio = 2;
+			}else if(rad2 = document.querySelector('input[id=radio2]:checked')){
+				nextRadio = 3;
+			}else if(rad3 = document.querySelector('input[id=radio3]:checked')){
+				nextRadio = 4;
+			}else if(rad4 = document.querySelector('input[id=radio4]:checked')){
+				nextRadio = 1;
+			}
+			counter=nextRadio;
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+		}, 10000);
+	</script>
 
 </body>
 </html>
