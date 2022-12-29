@@ -1,0 +1,467 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+	background: #e3e9f7;
+	/*background: #f1f2f6;*/
+}
+
+#content{
+	width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 0 auto;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+}
+
+header #logo_Pagina{
+	width: 30%;
+}
+
+header img{
+	height: 50px;
+}
+
+header img:hover{
+	opacity: 70%;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+	color: #212526;
+    display: block;
+    margin: 0 2px;
+    font-weight: 800;
+    padding: 8px 18px;
+    border-radius: 12px;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background: #000;
+}
+
+nav ul li a:hover {
+	background: black;
+	color: white;
+}
+.responsive {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.responsive:hover {
+    background: #f6f4ff;
+}
+
+.responsive .line {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
+
+#main{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#map{
+	background: #fff;
+	width: 90%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.6);
+}
+
+#mapa_calidad{
+	width: 95%;
+	margin: auto;
+	margin: 10px 0 10px 0;
+	padding-left: 5%;
+}
+
+#main article{
+	background: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 90%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.6);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+
+#main article section{
+	width: 47%;
+	height: 550px;
+	margin: auto;
+	float: left;
+	margin: 20px 0px 20px 0px;		
+	text-align: center;
+	background: #f9fafc;
+	border-style: solid;
+	border-radius: 7px;
+	border-width: 1px;
+ 	border-color: #000;
+ 	margin-left: 1%;
+ 	margin-right: 1%;
+}
+
+#main article:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+
+section p{
+	font-family: sans-serif;
+}
+
+#tituloVerificarCalidad{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 0 10px 0;
+}
+
+#selectVerificar{
+	width: 40%;
+	height: 25px;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+
+}
+
+#btnVerificarCalidad{
+	width: 30%;
+	height: 40px;
+	background: #2563ea;
+	color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+#btnVerificarCalidad:hover{
+	background: #eef1f8;
+	color: #4d7397;
+	cursor: pointer;
+}
+
+#resultadoVerificarCalidad{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+	border: 2px solid #000;
+	border-radius: 7.5px;
+
+}
+
+#txtTituloResultadoVerificarCalidad{
+	font-size: 19px;
+	padding: 10px 0 0 0;
+	font-weight: bold;
+}
+
+#txtResultadoVerificarCalidad{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#staticsH{
+	font-size: 19px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.statics{
+	font-size: 17px;
+	padding: 5px 0 5px 0;
+}
+
+#tituloEstadistica{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 0 10px 0;
+}
+
+#descripcionEstadistica{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#DatosPromedios{
+	font-size: 19px;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+
+#imgInfo{
+	width: 100px;
+	margin-bottom: 10px;
+}
+
+#moreContent{
+	background: #fff;
+	padding: 0 10px 0 10px;
+	width: 90%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.6);
+	margin-bottom: 20px;
+}
+
+#moreContent p{
+	padding: 10px;
+}
+
+
+@media only screen and (max-width: 700px){
+	
+	header {
+        width: 100%;
+        padding: 0 20px;
+    }
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    #nav_check:checked ~ nav {
+        left: 0;
+    }
+
+    header nav #logo_Pagina {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    header nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    header nav ul li a {
+        margin-bottom: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        display: block;
+		text-decoration: none;
+		border-bottom:1px solid rgba(0,0,0,.5);	
+
+    }
+
+    header nav ul li a:hover {
+        background: black;
+        color: white;
+    }
+
+    .responsive {
+        display: block;
+    }
+ 
+
+	#main{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#mapa_calidad{
+		width: 90%;
+		margin: auto;
+	}
+
+	#main article{
+		width: 90%;
+	}
+
+	#main article section{
+		width: 90%;
+		margin-left: 5%;		
+		margin-bottom: 15px;
+		background: #f9fafc;
+		border-style: solid;
+		border-radius: 7px;
+		border-width: 1px;
+ 		border-color: #000;
+	}
+
+	section p{
+		font-family: sans-serif;
+	}
+
+	#tituloVerificarCalidad{
+		font-weight: bold;
+		font-size: 20px;
+		padding: 10px 0 10px 0;
+	}
+
+	#selectVerificar{
+		width: 40%;
+		height: 25px;
+		text-align: center;
+		border-radius: 10px;
+		margin-bottom: 10px;
+
+	}
+
+	#btnVerificarCalidad{
+		width: 30%;
+		height: 40px;
+		background: #2563ea;
+		color: #fff;
+		border: 1px solid #000;
+		border-radius: 10px;
+	}
+
+	#btnVerificarCalidad:hover{
+		background: #eef1f8;
+		color: #4d7397;
+		cursor: pointer;
+	}
+
+	#resultadoVerificarCalidad{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10px;
+		border: 2px solid #000;
+		border-radius: 7.5px;
+
+	}
+
+	#txtTituloResultadoVerificarCalidad{
+		font-size: 19px;
+		padding: 10px 0 0 0;
+		font-weight: bold;
+	}
+
+	#txtResultadoVerificarCalidad{
+		font-size: 18px;
+		padding-bottom: 20px;
+	}
+
+	#staticsH{
+		font-size: 19px;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.statics{
+		font-size: 17px;
+		padding: 5px 0 5px 0;
+	}
+
+	#tituloEstadistica{
+		font-weight: bold;
+		font-size: 20px;
+		padding: 10px 0 10px 0;
+	}
+
+	#descripcionEstadistica{
+		font-size: 18px;
+		padding-bottom: 20px;
+	}
+
+	#DatosPromedios{
+		font-size: 19px;
+		font-weight: bold;
+		text-decoration: underline;
+		padding-bottom: 10px;
+	}
+
+	#imgInfo{
+		width: 100px;
+		margin-bottom: 10px;
+	}
+
+}
+
+footer{
+	padding-top: 20px;
+	width: 100%;
+	background: #fff;
+	border-top: 1px solid black;
+}
+
+footer p{
+	font-family: sans-serif;
+}
+
+#titulo_Footer{
+	font-weight: bold;
+	text-align: center;
+}
+
+#fecha_Footer{
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+#copyright_Footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#text_copyright_Footer{
+
+	display: inline;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+
+}
+
+#imagenPUCMM_Footer{
+
+	width: 38px;
+	height: 38px;
+
+}
+
+#imagenRD_Footer{
+	width: 38px;
+	height: 25.32px;
+	margin-top: 6px;
+}
