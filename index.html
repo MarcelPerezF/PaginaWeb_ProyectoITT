@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 
-<!--  -->
+<!-- PAGINA WEB PROYECTO FINAL DE INGENIERIA TELEMATICA -->
+
 <html lang="ES-es">
 <head>
 	
 	<!-- TITULO DE LA PAGINA -->
 	<title>Calidad del Aire</title>
 
-	<!-- Informacion sobre la pagina web: -->
+	<!-- Informacion meta sobre la pagina web: -->
 	<meta charset="utf-8"/>
 	<meta lang="es">
-	<meta name="copyright" content="@Marcel Perez - Orlando Moronta">
+	<meta name="description" content="Calidad Aire en PUCMM campus Santiago"/>
+	<meta name="author" content="Marcel Perez, Orlando Moronta" />
+	<meta name="copyright" content="Marcel Perez, Orlando Moronta">
+	<meta name="keywords" content="Calidad del Aire, Air Quality PUCMM, Proyecto Final ITT"/>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- RESPONSIVE -->
 	<meta name="Viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+ 	<meta name="robots" content="index"/>
 
 	<!-- Enlaces a los archivos necesarios: -->
 	<link rel="stylesheet" type="text/css" href="Estilos/Estilos.css">
 	<script src="Js/Js.js"></script>
+	
 	<!-- Icono pagina -->
 	<link rel="icon" type="image/png" href="Imagenes/Logo.png">
 
 
 </head>
 <body>
-<div id="content">
+<div class="content" id="js_container">
 	<header>
 		<div id="logo_Pagina">
 			<a href=""><img src="Imagenes/SafeAir.png" id="imagenLogoPagina"></a>
@@ -147,7 +155,11 @@
 				+Dioxido de Nitrogeno<br></p>
 		</div>
 	</div>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>J<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<footer>
 		<p id="titulo_Footer">Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago</p>
 		<p id="fecha_Footer"></p>
@@ -170,11 +182,10 @@
 </div>
 	<!--Script Slideshow  -->
 <script type="text/javascript">
-let slideIndex = 1;
-let inicio = true;
+	let slideIndex = 1;
+let inicio = 0;
 
 showSlides(slideIndex);
-showSlides2();
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -203,6 +214,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+showSlides2();
+
 function showSlides2() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -210,10 +223,10 @@ function showSlides2() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-  if(!inicio){
+  if(inicio!=0){
     slideIndex++;
-    inicio=false;
   }
+  inicio++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -223,6 +236,7 @@ function showSlides2() {
   setTimeout(showSlides2, 5000); // Change image every 2 seconds
 }
 </script>
+
 
 </body>
 </html>
