@@ -1,25 +1,42 @@
 <!DOCTYPE html>
+
+<!-- PAGINA WEB PROYECTO FINAL DE INGENIERIA TELEMATICA -->
+
 <html lang="ES-es">
 <head>
+	<!-- ING. MARCEL PEREZ -->
+	<!-- ING. ORLANDO MORONTA -->
 
-	<!-- Informacion sobre la pagina web: -->
-	<meta charset="utf-8">
+	<!-- TITULO DE LA PAGINA -->
+	<title>Calidad del Aire</title>
+
+	<!-- Informacion meta sobre la pagina web: -->
+	<meta charset="utf-8"/>
 	<meta lang="es">
-	<meta name="copyright" content="@Marcel Perez - Orlando Moronta">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="icon" type="image/png" href="../Imagenes/Logo.png">
+	<meta name="description" content="Calidad Aire en PUCMM campus Santiago"/>
+	<meta name="author" content="Marcel Perez, Orlando Moronta" />
+	<meta name="copyright" content="Marcel Perez, Orlando Moronta">
+	<meta name="keywords" content="Calidad del Aire, Air Quality PUCMM, Proyecto Final ITT"/>
+
+	<!-- RESPONSIVE -->
 	<meta name="Viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+ 	<meta name="robots" content="index"/>
 
 	<!-- Enlaces a los archivos necesarios: -->
 	<link rel="stylesheet" type="text/css" href="../Estilos/Estilos.css">
 	<script src="../Js/Js.js"></script>
 
-	<title>Calidad del Aire</title>
+	<!-- Icono pagina -->
+	<link rel="icon" type="image/png" href="../Imagenes/Logo.png">
+	<!-- Scroll To Top -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="../Js/ScrollToTop.js"></script>
 
 </head>
 <body>
-<div id="content">
+<div class="content">
 	<header>
 		<div id="logo_Pagina">
 			<a href="../"><img src="../Imagenes/SafeAir.png" id="imagenLogoPagina"></a>
@@ -49,7 +66,7 @@
 	</header>
 	
 
-	<div id="main">
+	<div class="main">
 		<p>MAPA</p>
 		<br><br><br><br><br>
 		<p>MAPA</p>
@@ -58,24 +75,30 @@
 		<p>MAPA</p>
 		<br><br><br><br><br>
 		<p>MAPA</p>
+		<br><br><br><br><br><br>		
+		<p>MAPA</p>
+		<br><br><br><br><br>
+		<p>MAPA</p>
+		<br><br><br><br><br><br>		
+		<p>MAPA</p>
+		<br><br><br><br><br>
+		<p>MAPA</p>
 		<br><br><br><br><br><br>
 	</div>
+	
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
 	<footer>
-		<p id="titulo_Footer">Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago</p>
+		<p class="titulo_Footer">Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago</p>
 		<p id="fecha_Footer"></p>
 
 		<!-- SCRIP PARA ACTUALIZAR FECHA -->
-		<script type="text/javascript">
-			var reloj = document.getElementById('fecha_Footer');
-			var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-			var f=new Date();
-			reloj.innerHTML = (f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-		</script>
-		<div id="copyright_Footer">
-			<img src="../Imagenes/PUCMM.png" alt="Imagen PUCMM" id="imagenPUCMM_Footer">
-			<p id="text_copyright_Footer">&copy;2023 - Todos los derechos reservados</p>
-			<img src="../Imagenes/RD.jpg" alt="Imagen RD" id="imagenRD_Footer">
+		<script type="text/javascript" src="../Js/UpdateTime.js"></script>
+
+		<div class="copyright_Footer">
+			<img src="../Imagenes/PUCMM.png" alt="Imagen PUCMM" class="imagenPUCMM_Footer">
+			<p class="text_copyright_Footer">&copy;2023 - Todos los derechos reservados</p>
+			<img src="../Imagenes/RD.jpg" alt="Imagen RD" class="imagenRD_Footer">
 		</div>
 
 	</footer>

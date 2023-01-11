@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <!-- PAGINA WEB PROYECTO FINAL DE INGENIERIA TELEMATICA -->
-
 <html lang="ES-es">
 <head>
-	
+	<!-- ING. MARCEL PEREZ -->
+	<!-- ING. ORLANDO MORONTA -->
+
 	<!-- TITULO DE LA PAGINA -->
 	<title>Calidad del Aire</title>
 
@@ -16,7 +16,6 @@
 	<meta name="copyright" content="Marcel Perez, Orlando Moronta">
 	<meta name="keywords" content="Calidad del Aire, Air Quality PUCMM, Proyecto Final ITT"/>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- RESPONSIVE -->
 	<meta name="Viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
@@ -29,13 +28,19 @@
 	<!-- Icono pagina -->
 	<link rel="icon" type="image/png" href="Imagenes/Logo.png">
 
+	<!-- Scroll To Top -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="Js/ScrollToTop.js"></script>
 
 </head>
 <body>
-<div class="content" id="js_container">
+<div class="content">
 	<header>
 		<div id="logo_Pagina">
-			<a href=""><img src="Imagenes/SafeAir.png" id="imagenLogoPagina"></a>
+			<a href="">
+				<img src="Imagenes/SafeAir.png" id="imagenLogoPagina" alt="Logo de la Pagina">
+			</a>
 		</div>
         <input type="checkbox" id="nav_check" hidden>
 		<nav>
@@ -62,33 +67,32 @@
 	</header>
 	
 
-	<div id="main">
-		<div id="map">
+	<div class="main">
+		<div class="slide">
 			<div class="slideshow-container">
-
 				<div class="mySlides fade">
 				  <div class="numbertext">1 / 4</div>
-				  <img src="Imagenes/Banner1_A.png" style="width:100%">
+				  <img src="Imagenes/Banner1.png" alt="Imagen BannerA" style="width:100%">
 				</div>
 
 				<div class="mySlides fade">
 				  <div class="numbertext">2 / 4</div>
 				  <a href="Estadistica/">
-				  	<img src="Imagenes/Banner2_A.png" style="width:100%">
+				  	<img src="Imagenes/Banner2.png" alt="Imagen BannerB" style="width:100%">
 				  </a>
 				</div>
 
 				<div class="mySlides fade">
 				  <div class="numbertext">3 / 4</div>
 				  <a href="Mapa/">
-				  	<img src="Imagenes/Banner3_A.png" style="width:100%">
+				  	<img src="Imagenes/Banner3.png" alt="Imagen BannerC" style="width:100%">
 				  </a>
 				</div>
 
 				<div class="mySlides fade">
 				  <div class="numbertext">4 / 4</div>
 				  <a href="Informacion/">
-				  	<img src="Imagenes/Banner4_A.png" style="width:100%">
+				  	<img src="Imagenes/Banner4.png" alt="Imagen BannerD" style="width:100%">
 				  </a>
 				</div>
 
@@ -96,6 +100,7 @@
 				<a class="next" onclick="plusSlides(1)">❯</a>
 
 			</div>
+			<!-- BOTONS BELOW SLIDESHOW -->
 			<div style="text-align:center">
 			  <span class="dot" onclick="currentSlide(1)"></span> 
 			  <span class="dot" onclick="currentSlide(2)"></span> 
@@ -103,7 +108,71 @@
 			  <span class="dot" onclick="currentSlide(4)"></span> 
 			</div>
 		</div>
+
 		<article>
+			<h1 class="TituloContent">SISTEMA DE INSPECCION DE LA CALIDAD DEL AIRE EN PUCMM</h1>
+			<!-- <h2 class="Bienvenida">Bienvenidos al sitio web del Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago.</h2> -->
+			<h3 class="Proyecto">Breve Resumen del Proyecto.</h3>
+			<p class="ProyectoTexto">
+				El proyecto consiste en una serie de modulos que estan ubicados en distintas ubicaciones del campus y estan monitoreando de manera constante la calidad del aire con distintos sensores. Estos sensores se comunican por medio de una red LoraWAN que a su vez envian la informacion de los distintos modulos a una base de datos que se utiliza para mostrar los resultados. 
+				<br><a href="Informacion/">Para conocer mas sobre lo que trata el proyecto haga click aqui</a>
+			</p>
+			<br>
+			<h3 class="Proyecto">Importancia del proyecto.</h3>
+			<p class="ProyectoTexto">
+				El proyecto es muy importante y esto se debe a lo siguiente: el aire es uno de los factores mas importantes de nuestra vida porque es imprescindible para vivir. En muchas ocasiones nos encontramos en lugares donde el aire no es el mas adecuado para que los seres humanos respiremos. Por esto el proyecto intenta proporcionar una herramienta para que todas las personas interesadas en el estado del aire en el campus pueda acceder a dicha informacion en tiempo real.
+				<br><a href="Informacion/">Para conocer mas sobre lo que trata el proyecto haga click aqui</a>
+			</p>
+			<h3 class="Proyecto">Elementos que se toman en cuenta.</h3>
+			<p class="ProyectoTexto">
+				Para llevar a cabo el calculo de la calidad del aire se toman distintos factores o elementos, los cuales se mencionan a continuacion: 
+				<br>+Particulas de Polvo.
+				<br>+CO2
+				<br>+CO
+				<br>+Dioxido de Nitrogeno
+				<br>+C2H5CH
+				<br>+COV
+				<br><a href="Informacion/">Para conocer mas sobre estos elementos haga click aqui</a>
+			</p>
+			<h3 class="Proyecto">Estadisticas Generales.</h3>
+			<p class="ProyectoTexto">
+				Actualmente el estado general del aire en el campus es <b>Moderado</b> con un <b>10%</b> de presencia de <b>particulas de polvo</b>, <b>10%</b> de presencia de <b>CO2</b> y un <b>5.6%</b> de <b>CO</b>, de <b>Dioxido de Nitrogeno</b> hay una presencia de un <b>2.5%</b>, <b>C2H5CH</b> un <b>6%</b> y de <b>COV</b> un <b>18.5%.</b> El area que tiene la peor calidad en el aire es la zona de <b>Padre Arroyo</b>, mientras que el area que tiene la peor calidad en el aire es la zona de <b>Edificio A3</b>.
+
+				<br><a href="Estadistica/">Para ver las estadisticas completas haga click aqui</a>
+			</p>
+
+			<br><h3 class="Proyecto">Funcionalidades del sitio.</h3>
+			<p class="ProyectoTexto">
+				Las distintas funciones que se pueden realizar en este sitio web son las siguientes:
+			</p>
+			<div class="Imagenes1">
+				<img src="Imagenes/Mapa.png" class="MapaImg" alt="Imagen de Mapa">
+				<p class="TitleImg">Ver el estado del aire en el mapa</p>
+				<p class="TextImg">
+					+Ver el estado del aire todo el campus universitario.<br>
+					+Mapa  indicara el estado del aire. <br>
+					+El mapa mostrara las ubicaciones en la universidad.
+				</p>
+				<p class="VerMas"><a href="Mapa/">Ver mas...</a></p>
+
+			</div>
+			<div class="Imagenes2">
+				<img src="Imagenes/Estadistica.png" class="EstadisticaImg" alt="Imagen de estadistica">
+				<p class="TitleImg">Ver estadisticas del estado del aire</p>
+				<p class="TextImg">
+					+Ver estadisticas que se actualizan en tiempo real del estado del aire en el campus universitario. Hay diversas opciones que el usuario puede visualizar.
+				</p>
+				<p class="VerMas"><a href="Estadistica/">Ver mas...</a></p>
+
+			</div>
+			<div class="Imagenes3">
+				<img src="Imagenes/Informacion.png" class="InformacionImg" alt="Imagen de un logo - informacion">
+				<p class="TitleImg">Ver informacion del proyecto</p>
+				<p class="TextImg">
+					Puede ver toda la informacion relacionada con el desarrollo del proyecto, como el porque del proyecto, la importancia, quienes lo realizaron, entre otras.
+				</p>
+				<p class="VerMas"><a href="Informacion/">Ver mas...</a></p>
+			</div>
 			<section id="Column1">
 				<p id="tituloVerificarCalidad">Verifica la calidad del aire en:</p>
 				<select name="slcVerificarCalidad" id="selectVerificar">
@@ -141,102 +210,87 @@
 				<p id="DioxNitr_2"  class="statics">Dioxido de Nitrogeno: <b>1%</b></p>
 				<p id="C2H5CH_2"  class="statics">C2H5CH: <b>3.4%</b></p>
 				<p id="COV_2"  class="statics">COV: <b>1.34%</b></p>
+				<p id="COV_2"  class="statics">TEMPERATURA<b>1.34%</b></p>
+				<p id="COV_2"  class="statics">HUMEDAD<b>1.34%</b></p>
 				<br><br>
-				<img src="Imagenes/Information.png" id="imgInfo">
+				<img src="Imagenes/Information.png" id="imgInfo" alt="Imagen info">
 				<br>
 			</section>
+
 		</article>
 
-		<div id="moreContent">
-			<p><b>Elementos tomados en cuenta para la inspeccion</b></p>
-			<p>+Particula de polvo<br>
-				+CO2<br>
-				+CO<br>
-				+Dioxido de Nitrogeno<br></p>
-		</div>
+			<div class="container_form">
+				<h1>Envianos un mensaje</h1>
+				<p>¿Tienes alguna sugerencia para mejorar? Envianos un mensaje</p>	
+				<div class="container">
+					<form action="Mensaje.php">
+						<div class="row">
+							<div class="column">
+								<label for="name">Nombre</label>
+								<input type="text" id="name" placeholder="Ingrese su nombre" required>
+							</div>
+							<div class="column">
+								<label for="email">Correo Electronico</label>
+								<input type="email" id="email" placeholder="Ingrese su correo electronico" required>
+							</div>
+						</div>
+						<div class="row">
+							
+							<div class="gender-details">
+								<input type="radio" name="gender" id="dot-1">
+								<input type="radio" name="gender" id="dot-2">
+								<input type="radio" name="gender" id="dot-3">
+								<span class="gender-title">Genero</span>
+								<div class="category">
+								  <label for="dot-1">
+								  <span class="dot one"></span>
+								  <span class="gender">Hombre</span>
+								</label>
+								<label for="dot-2">
+								  <span class="dot two"></span>
+								  <span class="gender">Mujer</span>
+								</label>
+								<label for="dot-3">
+								  <span class="dot three"></span>
+								  <span class="gender">Ninguno</span>
+								  </label>
+								</div>
+							  </div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<label for="issue">Mensaje</label>
+								<textarea id="issue" placeholder="Escriba en detalle su mensaje aqui" rows="3"></textarea>
+							</div>
+						</div>
+						<script src="Js/CheckGender.js"></script>
+						
+						<button disabled="true" id="btnEnviar">Enviar</button>
+					</form>
+				</div>
+			</div>
+
 	</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br>J<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
 	<footer>
-		<p id="titulo_Footer">Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago</p>
+		<p class="titulo_Footer">Sistema de inspección de la calidad del aire en el campus de PUCMM - Santiago</p>
 		<p id="fecha_Footer"></p>
 
 		<!-- SCRIP PARA ACTUALIZAR FECHA -->
-		<script type="text/javascript">
-			var reloj = document.getElementById('fecha_Footer');
-			var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-			var f=new Date();
-			reloj.innerHTML = (f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-		</script>
-		<div id="copyright_Footer">
-			<img src="Imagenes/PUCMM.png" alt="Imagen PUCMM" id="imagenPUCMM_Footer">
-			<p id="text_copyright_Footer">&copy;2023 - Todos los derechos reservados</p>
-			<img src="Imagenes/RD.jpg" alt="Imagen RD" id="imagenRD_Footer">
+		<script type="text/javascript" src="Js/UpdateTime.js"></script>
+
+		<div class="copyright_Footer">
+			<img src="Imagenes/PUCMM.png" alt="Imagen PUCMM" class="imagenPUCMM_Footer">
+			<p class="text_copyright_Footer">&copy;2023 - Todos los derechos reservados</p>
+			<img src="Imagenes/RD.jpg" alt="Imagen RD" class="imagenRD_Footer">
 		</div>
-
 	</footer>
-
 </div>
-	<!--Script Slideshow  -->
-<script type="text/javascript">
-	let slideIndex = 1;
-let inicio = 0;
 
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-showSlides2();
-
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  if(inicio!=0){
-    slideIndex++;
-  }
-  inicio++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides2, 5000); // Change image every 2 seconds
-}
-</script>
-
+<!--Script Slideshow  -->
+<script type="text/javascript" src="Js/SlideShow.js"></script>
 
 </body>
 </html>
