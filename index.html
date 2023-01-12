@@ -26,7 +26,7 @@
 	<script src="Js/Js.js"></script>
 	
 	<!-- Icono pagina -->
-	<link rel="icon" type="image/png" href="Imagenes/Logo.png">
+	<link rel="icon" type="image/png" href="Imagenes/Logo21.png">
 
 	<!-- Scroll To Top -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -39,7 +39,7 @@
 	<header>
 		<div id="logo_Pagina">
 			<a href="">
-				<img src="Imagenes/SafeAir.png" id="imagenLogoPagina" alt="Logo de la Pagina">
+				<img src="Imagenes/Logo2.png" id="imagenLogoPagina" alt="Logo de la Pagina">
 			</a>
 		</div>
         <input type="checkbox" id="nav_check" hidden>
@@ -77,16 +77,12 @@
 
 				<div class="mySlides fade">
 				  <div class="numbertext">2 / 4</div>
-				  <a href="Estadistica/">
 				  	<img src="Imagenes/Banner2.png" alt="Imagen BannerB" style="width:100%">
-				  </a>
 				</div>
 
 				<div class="mySlides fade">
 				  <div class="numbertext">3 / 4</div>
-				  <a href="Mapa/">
 				  	<img src="Imagenes/Banner3.png" alt="Imagen BannerC" style="width:100%">
-				  </a>
 				</div>
 
 				<div class="mySlides fade">
@@ -219,56 +215,79 @@
 
 		</article>
 
-			<div class="container_form">
+		<div class="container_form">
+
+			<div class="Values">
+				<h1>Sobre el proyecto</h1>
+				<p class="formText">Mision, Vision, Valores</p>
+				<div class="mision">
+					<img src="Imagenes/Mision.png" class="ValuesImagen" style="width: 10%;">
+					<h2>Mision</h2>
+					<p class="ValuesText">Nuestra mision es brindarle a estudiantes, profesores, empleados o cualquier persona la oportunidad de visualizar el estado del aire en la universidad en un momento dado.</p>
+				</div>
+				<br>			
+				<div class="vision">
+					<img src="Imagenes/Vision.png" class="ValuesImagen" style="width: 10%;">
+					<h2>Vision</h2>
+					<p class="ValuesText">Nuestra vision es que todos los interesados en el estado del aire en el campus pueda usar este sitio web para informarse.</p>
+				</div>
+				<br>				
+				<div class="valores">
+					<img src="Imagenes/Valores.png" class="ValuesImagen" style="width: 10%;">
+					<h2>Valores</h2>
+					<p class="ValuesText">Los valores que tenemos son: <br>+Seguridad<br>+Profesionalismo<br>+Compromiso</p>
+				</div>	
+			</div>
+			
+			<div class="container">
 				<h1>Envianos un mensaje</h1>
-				<p>¿Tienes alguna sugerencia para mejorar? Envianos un mensaje</p>	
-				<div class="container">
-					<form action="Mensaje.php">
-						<div class="row">
-							<div class="column">
-								<label for="name">Nombre</label>
-								<input type="text" id="name" placeholder="Ingrese su nombre" required>
-							</div>
-							<div class="column">
-								<label for="email">Correo Electronico</label>
-								<input type="email" id="email" placeholder="Ingrese su correo electronico" required>
-							</div>
+				<p class="formText">¿Tienes alguna sugerencia para mejorar? Envianos un mensaje</p>	
+				<form action="Mensaje.php">
+					<div class="row">
+						<div class="column">
+							<label for="name">Nombre</label>
+							<input type="text" id="name" placeholder="Ingrese su nombre" required>
 						</div>
-						<div class="row">
+						<div class="column">
+							<label for="email">Correo Electronico</label>
+							<input type="email" id="email" placeholder="Ingrese su correo electronico" required>
+						</div>
+					</div>
+					<div class="row">
 							
-							<div class="gender-details">
-								<input type="radio" name="gender" id="dot-1">
-								<input type="radio" name="gender" id="dot-2">
-								<input type="radio" name="gender" id="dot-3">
-								<span class="gender-title">Genero</span>
-								<div class="category">
-								  <label for="dot-1">
-								  <span class="dot one"></span>
-								  <span class="gender">Hombre</span>
+						<div class="gender-details">
+							<input type="radio" name="gender" id="dot-1">
+							<input type="radio" name="gender" id="dot-2">
+							<input type="radio" name="gender" id="dot-3">
+							<span class="gender-title">Genero</span>
+							<div class="category">
+							 	<label for="dot-1">
+							  		<span class="dot one"></span>
+							  		<span class="gender">Hombre</span>
 								</label>
 								<label for="dot-2">
-								  <span class="dot two"></span>
-								  <span class="gender">Mujer</span>
+							 		<span class="dot two"></span>
+							  		<span class="gender">Mujer</span>
 								</label>
 								<label for="dot-3">
-								  <span class="dot three"></span>
-								  <span class="gender">Ninguno</span>
-								  </label>
-								</div>
-							  </div>
-						</div>
-						<div class="row">
-							<div class="column">
-								<label for="issue">Mensaje</label>
-								<textarea id="issue" placeholder="Escriba en detalle su mensaje aqui" rows="3"></textarea>
+							  		<span class="dot three"></span>
+							  		<span class="gender">Ninguno</span>
+							  	</label>
 							</div>
 						</div>
-						<script src="Js/CheckGender.js"></script>
+					</div>
+					<div class="row">
+						<div class="column">
+							<label for="issue">Mensaje</label>
+							<textarea id="issue" placeholder="Escriba en detalle su mensaje aqui" rows="3"></textarea>
+						</div>
+					</div>
+					<script src="Js/CheckGender.js"></script>
 						
-						<button disabled="true" id="btnEnviar">Enviar</button>
-					</form>
-				</div>
+					<button disabled="true" id="btnEnviar">Enviar</button>
+				</form>
 			</div>
+		</div>
 
 	</div>
 
